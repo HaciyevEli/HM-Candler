@@ -30,6 +30,13 @@ ul, ol {
   padding: 0;
 }
 
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
 body {
   font-family: var(--font-family);
   font-size: 14px;
@@ -47,10 +54,7 @@ body {
   display: none;
   width: 30px;
   height: 25px;
-  border: none;
   background-color: transparent;
-  padding: 0;
-  border-radius: 0;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -106,6 +110,52 @@ body {
   top: -3px;
 }
 
+.main {
+  background-color: var(--color-pink);
+  overflow-x: clip;
+}
+
+.top{
+  padding:40px 0 150px;
+}
+
+.top__inner {
+  position: relative;
+}
+
+.top__content {
+  width: 370px;
+  padding: 150px 0 250px;
+}
+
+.top__titel {
+  font-family: var(--second-family);
+  font-size: 30px;
+  margin-bottom: 15px;
+
+}
+
+.top__text {
+  margin-bottom: 48px;
+}
+
+.top__btn {
+  font-family: var(--font-family);
+  padding: 18px 54px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: var(--color-yellow);
+}
+
+.top__btn:hover {
+  background-color: #f1b204;
+}
+
+.top__img {
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
 
 
 .footer {
@@ -146,6 +196,19 @@ body {
   .container {
     padding: 0 20px;
   }
+  .top__content {
+    width: 333px;
+    padding: 95px 0 70px;
+  }
+  .top__img-L {
+    width: 655px;
+  }
+  .top__img {
+    left: 300px;
+  }
+  .top__text {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 900px){
@@ -174,6 +237,20 @@ body {
     height: 14px;
     left: -16px;
     top: -2px;
+  }
+  .top__content {
+    width: 230px;
+  }
+  .top__titel {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .top__text {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .top__img {
+    left: 180px;
   }
 }
 
@@ -229,6 +306,54 @@ body {
   .footer__menu-list {
     flex-direction: column;
   }
+}
+
+@media(max-width: 480px){
+  .top{
+    padding: 30px 0 50px;
+  }
+  .top__img-L {
+    width: 309px;
+    left: 167px;
+  }
+  .top__content {
+    width: 180px;
+  }
+  .top__text {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+  .top__titel{
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .top__btn {
+    font-size: 10px;
+    padding: 14px 41px;
+  }
+}
+
+@media(max-width: 480px){
+  .top__img-L {
+    width: 160px;
+  }
+
+  .top__img {
+    left: auto;
+    right: 0;
+  }
+
+  .top__content {
+    width: 200px;
+    padding: 20px 0 0;
+  }
+  .top__text {
+    font-size: 10px;
+  }
+  .top__titel{
+    font-size: 17px;
+  }
+
 }
 
 
